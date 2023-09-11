@@ -70,7 +70,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:Samuelwanza/clinic-datanase.git
+  git clone https://github.com/ctokoli/OOP-school-library.git
 ```
 
 ### Install
@@ -94,9 +94,9 @@ Install Ruby [https://www.ruby-lang.org/en/documentation/installation/]
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[]**
-- [ ] **[]**
-- [ ] **[]**
+- [ ] **[Add Decorators]**
+- [ ] **[Set Associations]**
+- [ ] **[Add testing]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
