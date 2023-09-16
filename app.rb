@@ -51,7 +51,7 @@ class App
   end
 
   def person_info(person)
-    name = person.name.capitalize
+    name = person.name
     if person.is_a?(Student)
       "[Student] Name: #{name}, ID: #{person.id}, Age: #{person.age}"
     elsif person.is_a?(Teacher)
