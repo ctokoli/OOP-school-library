@@ -75,7 +75,7 @@ class App
   end
 
   def create_student
-    puts 'Generating Student...'
+    puts 'Creating Student...'
     print 'Student Age:'
     age = gets.chomp.to_i
     print 'Student Name:'
@@ -87,7 +87,7 @@ class App
   end
 
   def create_teacher
-    puts 'Generating Teacher...'
+    puts 'Creating Teacher...'
     print 'Teacher Age:'
     age = gets.chomp.to_i
     print 'Teacher Name:'
