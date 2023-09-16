@@ -124,7 +124,7 @@ class App
     puts 'Rental created successfully'
   end
 
-  def list_rentals_for_person
+  def search_rented_books_by_person
     print 'ID of the person: '
     id = gets.chomp.to_i
     display_rentals_for_person(id)
@@ -132,7 +132,6 @@ class App
 
   def display_rentals_for_person(id)
     rented_books_by_id = @rentals.select { |rental| rental.person.id == id }
-
     if rented_books_by_id.empty?
       puts 'No rentals found for this id'
     else
