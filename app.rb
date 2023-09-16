@@ -25,8 +25,7 @@ class App
       when 5 then create_rental
       when 6 then search_rented_books_by_person
       when 7
-        exit_app
-        break
+        exit
       else
         puts 'Invalid input. Please choose a valid option.'
       end
