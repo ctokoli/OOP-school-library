@@ -4,7 +4,7 @@ class Student < Person
   attr_reader :classroom
   attr_accessor :id, :parent_permission
 
-  def initialize(age, name = 'Unknown', classroom, parent_permission: true)
+  def initialize(age, name, classroom, parent_permission: true)
     super(age, name, parent_permission: parent_permission)
     @id = Random.rand(1..1000)
     @parent_permission = parent_permission
@@ -20,4 +20,3 @@ class Student < Person
     '¯\\(ツ)/¯'
   end
 end
-

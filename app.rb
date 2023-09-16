@@ -25,8 +25,7 @@ class App
       when 5 then create_rental
       when 6 then search_rented_books_by_person
       when 7
-        exit_app
-        break
+        exit
       else
         puts 'Invalid input. Please choose a valid option.'
       end
@@ -76,7 +75,7 @@ class App
   end
 
   def create_student
-    puts 'Generating Student...'
+    puts 'Creating Student...'
     print 'Student Age:'
     age = gets.chomp.to_i
     print 'Student Name:'
@@ -88,7 +87,7 @@ class App
   end
 
   def create_teacher
-    puts 'Generating Teacher...'
+    puts 'Creating Teacher...'
     print 'Teacher Age:'
     age = gets.chomp.to_i
     print 'Teacher Name:'
@@ -125,7 +124,7 @@ class App
     puts 'Rental created successfully'
   end
 
-  def list_rentals_for_person
+  def search_rented_books_by_person
     print 'ID of the person: '
     id = gets.chomp.to_i
     display_rentals_for_person(id)
@@ -133,7 +132,6 @@ class App
 
   def display_rentals_for_person(id)
     rented_books_by_id = @rentals.select { |rental| rental.person.id == id }
-
     if rented_books_by_id.empty?
       puts 'No rentals found for this id'
     else
